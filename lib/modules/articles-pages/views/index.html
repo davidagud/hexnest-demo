@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% import 'macros/masthead.html' as masthead %}
+
+{% block main %}
+  {{ apos.singleton(data.page, 'featured', 'articles-featured') }}
+
+  <div data-apos-ajax-context="blog">
+    {% include "indexAjax.html" %}
+  </div>
+{% endblock %}

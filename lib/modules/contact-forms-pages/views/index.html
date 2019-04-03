@@ -1,0 +1,14 @@
+
+{% extends "layout.html" %}
+
+{% block main %}
+
+  {% for piece in data.pieces %}
+
+    {{ piece.title }}</br>
+    {{ piece.email }}</br>
+    {{ piece.message }}</br>
+
+  {% endfor %}
+
+{% endblock %}

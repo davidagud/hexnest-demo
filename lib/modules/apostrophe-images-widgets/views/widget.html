@@ -1,0 +1,9 @@
+<div style="{{ 'display: none' if data.widget.hidden }}">
+
+{% if data.options.template %}
+  {% extends data.options.template + '.html' %}
+{% else %}
+  {% extends 'widgetBase.html' %}
+{% endif %}
+
+</div>

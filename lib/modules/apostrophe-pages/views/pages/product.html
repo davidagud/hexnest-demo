@@ -1,0 +1,115 @@
+{% extends "pages/default.html" %}
+
+{% block main %}
+
+<div class="cutout">
+    <div class="product-jumbotron jumbotron-fluid">
+      {{ apos.singleton(data.page, 'heroBackground', 'background-image')}}
+      <div class="container">
+        <h1 class="product-jumbotron-header text-nowrap">{{ apos.singleton(data.page, 'heroHeader', 'apostrophe-rich-text')}}</h1>
+        <div class="row safe col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+          <div class="icon col-2">{{ apos.singleton(data.page, 'topIcon', 'image')}}</div>
+          <h6 id="safe-paragraph" class="col-9 col-sm-8">{{ apos.singleton(data.page, 'topIconParagraph', 'apostrophe-rich-text', { toolbar: [ 'Bold' ] })}}</h6>
+        </div>
+        <div class="row affordable col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+          <div class="icon col-2">{{ apos.singleton(data.page, 'bottomIcon', 'image')}}</div>
+          <h6 id="affordable-paragraph" class="col-9 col-sm-8">{{ apos.singleton(data.page, 'bottomIconParagraph', 'apostrophe-rich-text', { toolbar: [ 'Bold' ] })}}</h6>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid cutout-container">
+      <div class="cutout-bottom row justify-content-around">
+        <div class="layered col-4 col-lg-4 col-xl-3">
+          <div class="row">
+            <div class="col-6 line"></div>
+            <div class="col-6"></div>
+          </div>
+          <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesLeft', 'apostrophe-rich-text')}}</h4>
+        </div>
+        <div class="proprietary col-4 col-xl-3">
+          <div class="row">
+            <div class="col-6 line"></div>
+            <div class="col-6"></div>
+          </div>
+          <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesCenter', 'apostrophe-rich-text')}}</h4>
+        </div>
+        <div class="high-quality col-4 col-xl-3">
+          <div class="row">
+            <div class="col-6 line"></div>
+            <div class="col-6"></div>
+          </div>
+          <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesRight', 'apostrophe-rich-text')}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid facts">
+    <div class="row">
+      <div class="text">
+        <div class="img">
+          <i class="fas fa-angle-up fa-rotate-45"></i>
+          {{ apos.singleton(data.page, 'factsImage', 'image')}}
+        </div>
+        <h1>{{ apos.singleton(data.page, 'factsHeader', 'apostrophe-rich-text')}}</h1>
+        <div id="facts-paragraph">{{ apos.singleton(data.page, 'factsParagraph', 'apostrophe-rich-text')}}</div>
+      </div>
+    </div>
+    <i class="fas fa-square-full"></i>
+  </div>
+
+  <div class="numbers container-fluid">
+    <div class="row justify-content-around">
+      <div class="number-box col-6 col-sm-3 col-md-2">
+        <h1>94</h1>
+        <h5>Head Injury Criterion Score</h5>
+      </div>
+      <div class="number-box col-6 col-sm-3 col-md-2">
+        <h1>77</h1>
+        <h5>Closest Competitor HIC Score</h5>
+      </div>
+      <div class="number-box col-6 col-sm-3 col-md-2">
+        <h1>91</h1>
+        <h5>HexNest Safety Score</h5>
+      </div>
+      <div class="number-box col-6 col-sm-3 col-md-2">
+        <h1>65</h1>
+        <h5>Closest Competitor HNS Score</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid details">
+    <div class="row justify-content-around">
+      <video height="280" src="assets/videos/impact.mp4" type="video/mp4" class="col-12 col-md-7" controls></video>
+      <div class="specs col-11 col-md-5 col-lg-4">
+        <div class="container-fluid">
+          <div class="row" id="specs">
+            <h5>Specs</h5>
+          </div>
+          <div class="row dimensions justify-content-between">
+            <p><strong>Dimensions</strong></p>
+            <p>5' x 5' x 5'</p>
+          </div>
+          <div class="row cover justify-content-between">
+            <p><strong>Cover</strong></p>
+            <p>Vinyl</p>
+          </div>
+          <div class="row guidelines justify-content-between">
+            <p><strong>Guidelines</strong></p>
+            <p>Meets NCAA standards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="order container-fluid d-flex flex-row justify-content-center">
+    <div class="col-12 col-sm-10 col-md-8">
+      <h1>Be one of the first to order</h1>
+      <h4>We’re putting the finishing touches on our product to ensure we deliver the best product we can in its first iteration. By pre-ordering, you’re supporting our mission, and giving yourself the best product to protect your athletes.</h4>
+      <button class="btn btn-primary">Pre-Order</button>
+    </div>
+  </div>
+
+{% endblock %}

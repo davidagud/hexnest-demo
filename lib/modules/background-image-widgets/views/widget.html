@@ -1,0 +1,5 @@
+{% import 'macros/image.html' as image %}
+
+{% set image = apos.images.first(data.widget) %}
+
+<div class="background-image" style="background-image: url({{ apos.attachments.url(image, { size: 'full' }) }})"></div>
