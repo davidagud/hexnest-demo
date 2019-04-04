@@ -24,6 +24,7 @@ var apos = require('apostrophe')({
         key: process.env.APOS_S3_KEY,
         bucket: process.env.APOS_S3_BUCKET,
         region: process.env.APOS_S3_REGION
+      }
     },
 
     // If a template is not found somewhere else, serve it from the top-level
