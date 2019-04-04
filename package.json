@@ -1,7 +1,7 @@
 {
   "name": "hexnest",
-  "version": "2.0.0",
-  "description": "Minimal Apostrophe Boilerplate",
+  "version": "1.0.0",
+  "description": "Website with CMS built for HexNest",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -17,5 +17,8 @@
     "apostrophe-blog": "^2.1.2",
     "apostrophe-pieces-submit-widgets": "^2.0.3",
     "typy": "^3.0.1"
+  },
+  "engines": {
+    "node": "11.x"
   }
 }
