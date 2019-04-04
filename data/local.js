@@ -7,7 +7,7 @@ module.exports = {
     // If these are your db settings then you don't need to be explicit. If not
     // you can uncomment this and get more specific.
     'apostrophe-db': {
-    //  uri: process.env.APOS_MONGODB_URI
+    uri: process.env.APOS_MONGODB_URI
     }
   }
 };
