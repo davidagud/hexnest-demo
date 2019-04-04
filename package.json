@@ -16,7 +16,6 @@
     "apostrophe": "^2.47.0",
     "apostrophe-blog": "^2.1.2",
     "apostrophe-pieces-submit-widgets": "^2.0.3",
-    "aws-sdk": "^2.435.0",
     "typy": "^3.0.1"
   },
   "engines": {
