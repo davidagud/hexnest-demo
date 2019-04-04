@@ -17,16 +17,6 @@ var apos = require('apostrophe')({
     // However any modules that are not present by default in Apostrophe must at
     // least have a minimal configuration here: `moduleName: {}`
 
-    'apostrophe-attachments': {
-      uploadfs: {
-        backend: 's3',
-        secret: process.env.APOS_S3_SECRET,
-        key: process.env.APOS_S3_KEY,
-        bucket: process.env.APOS_S3_BUCKET,
-        region: process.env.APOS_S3_REGION
-      }
-    },
-
     // If a template is not found somewhere else, serve it from the top-level
     // `views/` folder of the project
 
