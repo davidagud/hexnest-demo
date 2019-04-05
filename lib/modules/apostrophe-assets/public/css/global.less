@@ -1,3 +1,9 @@
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+
 /* Text */
 
 p {
@@ -38,8 +44,6 @@ p {
 footer {
   background-color: #3210ED!important;
   height: 150px;
-  padding-right: 40px!important;
-  padding-left: 40px!important;
 }
 
 footer .nav-link {
@@ -76,7 +80,13 @@ footer .nav-link {
 }
 
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 425px) {
+  footer .navbar {
+    padding: 30px 2vw;
+  }
+}
+
+@media screen and (max-width: 375px) {
   footer .nav-link {
     font-size: 10px;
     margin-right: 0px;
