@@ -1,9 +1,5 @@
 var path = require('path');
 
-const compression = require('compression');
-const app = express();
-app.use(compression());
-
 var apos = require('apostrophe')({
   shortName: 'hexnest',
 
@@ -61,3 +57,6 @@ var apos = require('apostrophe')({
 
   }
 });
+
+var compression = require('compression');
+apos.app.use(compression());
