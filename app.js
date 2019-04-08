@@ -59,4 +59,4 @@ var apos = require('apostrophe')({
 });
 
 var compression = require('compression');
-apos.app.use(compression());
+app.use(compression());
