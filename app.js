@@ -57,6 +57,3 @@ var apos = require('apostrophe')({
 
   }
 });
-
-var compression = require('compression');
-app.use(compression());
