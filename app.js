@@ -3,6 +3,7 @@ var path = require('path');
 var apos = require('apostrophe')({
   shortName: 'hexnest',
 
+  compress: true,
   // See lib/modules for basic project-level configuration of our modules
   // responsible for serving static assets, managing page templates and
   // configuring user accounts.
