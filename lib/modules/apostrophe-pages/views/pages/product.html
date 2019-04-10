@@ -61,20 +61,20 @@
   <div class="numbers container-fluid">
     <div class="row justify-content-around">
       <div class="number-box col-6 col-sm-3 col-md-2">
-        <h1>94</h1>
-        <h5>Head Injury Criterion Score</h5>
+        <h1>{{ apos.singleton(data.page, 'numbersHeader1', 'apostrophe-rich-text')}}</h1>
+        <h5>{{ apos.singleton(data.page, 'numbersSubHeader1', 'apostrophe-rich-text')}}</h5>
       </div>
       <div class="number-box col-6 col-sm-3 col-md-2">
-        <h1>77</h1>
-        <h5>Closest Competitor HIC Score</h5>
+        <h1>{{ apos.singleton(data.page, 'numbersHeader2', 'apostrophe-rich-text')}}</h1>
+        <h5>{{ apos.singleton(data.page, 'numbersSubHeader2', 'apostrophe-rich-text')}}</h5>
       </div>
       <div class="number-box col-6 col-sm-3 col-md-2">
-        <h1>91</h1>
-        <h5>HexNest Safety Score</h5>
+        <h1>{{ apos.singleton(data.page, 'numbersHeader3', 'apostrophe-rich-text')}}</h1>
+        <h5>{{ apos.singleton(data.page, 'numbersSubHeader3', 'apostrophe-rich-text')}}</h5>
       </div>
       <div class="number-box col-6 col-sm-3 col-md-2">
-        <h1>65</h1>
-        <h5>Closest Competitor HNS Score</h5>
+        <h1>{{ apos.singleton(data.page, 'numbersHeader4', 'apostrophe-rich-text')}}</h1>
+        <h5>{{ apos.singleton(data.page, 'numbersSubHeader4', 'apostrophe-rich-text')}}</h5>
       </div>
     </div>
   </div>
@@ -85,19 +85,19 @@
       <div class="specs col-11 col-md-5 col-lg-4">
         <div class="container-fluid">
           <div class="row" id="specs">
-            <h5>Specs</h5>
+            <h5>{{ apos.singleton(data.page, 'specsHeader', 'apostrophe-rich-text')}}</h5>
           </div>
           <div class="row dimensions justify-content-between">
-            <p><strong>Dimensions</strong></p>
-            <p>5' x 5' x 5'</p>
+            <p><strong>{{ apos.singleton(data.page, 'dimensionsHeader', 'apostrophe-rich-text')}}</strong></p>
+            <p>{{ apos.singleton(data.page, 'dimensions', 'apostrophe-rich-text')}}</p>
           </div>
           <div class="row cover justify-content-between">
-            <p><strong>Cover</strong></p>
-            <p>Vinyl</p>
+            <p><strong>{{ apos.singleton(data.page, 'coverHeader', 'apostrophe-rich-text')}}</strong></p>
+            <p>{{ apos.singleton(data.page, 'cover', 'apostrophe-rich-text')}}</p>
           </div>
           <div class="row guidelines justify-content-between">
-            <p><strong>Guidelines</strong></p>
-            <p>Meets NCAA standards</p>
+            <p><strong>{{ apos.singleton(data.page, 'guidelinesHeader', 'apostrophe-rich-text')}}</strong></p>
+            <p>{{ apos.singleton(data.page, 'guidelines', 'apostrophe-rich-text')}}</p>
           </div>
         </div>
       </div>
@@ -106,9 +106,9 @@
 
   <div class="order container-fluid d-flex flex-row justify-content-center">
     <div class="col-12 col-sm-10 col-md-8">
-      <h1>Be one of the first to order</h1>
-      <h4>We’re putting the finishing touches on our product to ensure we deliver the best product we can in its first iteration. By pre-ordering, you’re supporting our mission, and giving yourself the best product to protect your athletes.</h4>
-      <button class="btn btn-primary">Pre-Order</button>
+      <h1>{{ apos.singleton(data.page, 'orderHeader', 'apostrophe-rich-text')}}</h1>
+      <h4>{{ apos.singleton(data.page, 'orderParagraph', 'apostrophe-rich-text')}}</h4>
+      <button class="btn btn-primary">{{ apos.singleton(data.page, 'orderButton', 'link')}}</button>
     </div>
   </div>
 
