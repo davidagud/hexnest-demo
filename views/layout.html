@@ -33,8 +33,6 @@
   </script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans" as="style">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans">
   <link rel="icon" type="image/png" href="{{ apos.attachments.url(data.global.favicon, { size: 'one-sixth' }) }}">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -97,5 +95,20 @@
         {% endfor %}
       </ul>
     </footer>
+
+  <script type="text/javascript">
+    WebFontConfig = {
+        google: { families: [ 'Noto+Sans:400,700' ] }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
 
 {% endblock %}
