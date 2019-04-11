@@ -53,7 +53,7 @@ var apos = require('apostrophe')({
     'image-widgets': { extend: 'apostrophe-widgets' },
     'link-widgets': { extend: 'apostrophe-widgets' },
     'marquee-widgets': { extend: 'apostrophe-widgets' },
-    'slideshow-widgets': { extend: 'apostrophe-widgets' }
+    'slideshow-widgets': { extend: 'apostrophe-widgets' },
 
   }
 });

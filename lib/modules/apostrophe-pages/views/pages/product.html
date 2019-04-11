@@ -81,23 +81,23 @@
 
   <div class="container-fluid details">
     <div class="row justify-content-around">
-      <video height="280" src="assets/videos/impact.mp4" type="video/mp4" class="col-12 col-md-7" controls></video>
+      <div class="col-11 col-md-6 col-lg-7">{{ apos.singleton(data.page, 'detailsVideo', 'apostrophe-video') }}</div>
       <div class="specs col-11 col-md-5 col-lg-4">
         <div class="container-fluid">
           <div class="row" id="specs">
             <h5>{{ apos.singleton(data.page, 'specsHeader', 'apostrophe-rich-text')}}</h5>
           </div>
           <div class="row dimensions justify-content-between">
-            <p><strong>{{ apos.singleton(data.page, 'dimensionsHeader', 'apostrophe-rich-text')}}</strong></p>
-            <p>{{ apos.singleton(data.page, 'dimensions', 'apostrophe-rich-text')}}</p>
+            {{ apos.singleton(data.page, 'dimensionsHeader', 'apostrophe-rich-text')}}
+            {{ apos.singleton(data.page, 'dimensions', 'apostrophe-rich-text')}}
           </div>
           <div class="row cover justify-content-between">
-            <p><strong>{{ apos.singleton(data.page, 'coverHeader', 'apostrophe-rich-text')}}</strong></p>
-            <p>{{ apos.singleton(data.page, 'cover', 'apostrophe-rich-text')}}</p>
+            {{ apos.singleton(data.page, 'coverHeader', 'apostrophe-rich-text')}}
+            {{ apos.singleton(data.page, 'cover', 'apostrophe-rich-text')}}
           </div>
           <div class="row guidelines justify-content-between">
-            <p><strong>{{ apos.singleton(data.page, 'guidelinesHeader', 'apostrophe-rich-text')}}</strong></p>
-            <p>{{ apos.singleton(data.page, 'guidelines', 'apostrophe-rich-text')}}</p>
+            {{ apos.singleton(data.page, 'guidelinesHeader', 'apostrophe-rich-text')}}
+            {{ apos.singleton(data.page, 'guidelines', 'apostrophe-rich-text')}}
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@
     <div class="col-12 col-sm-10 col-md-8">
       <h1>{{ apos.singleton(data.page, 'orderHeader', 'apostrophe-rich-text')}}</h1>
       <h4>{{ apos.singleton(data.page, 'orderParagraph', 'apostrophe-rich-text')}}</h4>
-      <button class="btn btn-primary">{{ apos.singleton(data.page, 'orderButton', 'link')}}</button>
+      <div class="info-box-button">{{ apos.singleton(data.page, 'orderButton', 'link')}}</div>
     </div>
   </div>
 
