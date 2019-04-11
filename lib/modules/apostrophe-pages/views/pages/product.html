@@ -1,115 +1,117 @@
 {% extends "pages/default.html" %}
 
 {% block main %}
+  <div class="content-body">
+    
+    <div class="cutout">
+      <div class="product-jumbotron jumbotron-fluid">
+        {{ apos.singleton(data.page, 'heroBackground', 'background-image')}}
+        <div class="container">
+          <h1 class="product-jumbotron-header text-nowrap">{{ apos.singleton(data.page, 'heroHeader', 'apostrophe-rich-text')}}</h1>
+          <div class="row safe col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+            <div class="icon col-2">{{ apos.singleton(data.page, 'topIcon', 'image')}}</div>
+            <h6 id="safe-paragraph" class="col-9 col-sm-8">{{ apos.singleton(data.page, 'topIconParagraph', 'apostrophe-rich-text', { toolbar: [ 'Bold' ] })}}</h6>
+          </div>
+          <div class="row affordable col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
+            <div class="icon col-2">{{ apos.singleton(data.page, 'bottomIcon', 'image')}}</div>
+            <h6 id="affordable-paragraph" class="col-9 col-sm-8">{{ apos.singleton(data.page, 'bottomIconParagraph', 'apostrophe-rich-text', { toolbar: [ 'Bold' ] })}}</h6>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid cutout-container">
+        <div class="cutout-bottom row justify-content-around">
+          <div class="layered col-4 col-lg-4 col-xl-3">
+            <div class="row">
+              <div class="col-6 line"></div>
+              <div class="col-6"></div>
+            </div>
+            <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesLeft', 'apostrophe-rich-text')}}</h4>
+          </div>
+          <div class="proprietary col-4 col-xl-3">
+            <div class="row">
+              <div class="col-6 line"></div>
+              <div class="col-6"></div>
+            </div>
+            <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesCenter', 'apostrophe-rich-text')}}</h4>
+          </div>
+          <div class="high-quality col-4 col-xl-3">
+            <div class="row">
+              <div class="col-6 line"></div>
+              <div class="col-6"></div>
+            </div>
+            <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesRight', 'apostrophe-rich-text')}}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="cutout">
-    <div class="product-jumbotron jumbotron-fluid">
-      {{ apos.singleton(data.page, 'heroBackground', 'background-image')}}
-      <div class="container">
-        <h1 class="product-jumbotron-header text-nowrap">{{ apos.singleton(data.page, 'heroHeader', 'apostrophe-rich-text')}}</h1>
-        <div class="row safe col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
-          <div class="icon col-2">{{ apos.singleton(data.page, 'topIcon', 'image')}}</div>
-          <h6 id="safe-paragraph" class="col-9 col-sm-8">{{ apos.singleton(data.page, 'topIconParagraph', 'apostrophe-rich-text', { toolbar: [ 'Bold' ] })}}</h6>
+    <div class="container-fluid facts">
+      <div class="row">
+        <div class="text">
+          <div class="img">
+            <i class="fas fa-angle-up fa-rotate-45"></i>
+            {{ apos.singleton(data.page, 'factsImage', 'image')}}
+          </div>
+          <h1>{{ apos.singleton(data.page, 'factsHeader', 'apostrophe-rich-text')}}</h1>
+          <div id="facts-paragraph">{{ apos.singleton(data.page, 'factsParagraph', 'apostrophe-rich-text')}}</div>
         </div>
-        <div class="row affordable col-12 col-sm-10 col-md-8 col-lg-6 col-xl-5">
-          <div class="icon col-2">{{ apos.singleton(data.page, 'bottomIcon', 'image')}}</div>
-          <h6 id="affordable-paragraph" class="col-9 col-sm-8">{{ apos.singleton(data.page, 'bottomIconParagraph', 'apostrophe-rich-text', { toolbar: [ 'Bold' ] })}}</h6>
+      </div>
+      <i class="fas fa-square-full"></i>
+    </div>
+
+    <div class="numbers container-fluid">
+      <div class="row justify-content-around">
+        <div class="number-box col-6 col-sm-3 col-md-2">
+          <h1>{{ apos.singleton(data.page, 'numbersHeader1', 'apostrophe-rich-text')}}</h1>
+          <h5>{{ apos.singleton(data.page, 'numbersSubHeader1', 'apostrophe-rich-text')}}</h5>
+        </div>
+        <div class="number-box col-6 col-sm-3 col-md-2">
+          <h1>{{ apos.singleton(data.page, 'numbersHeader2', 'apostrophe-rich-text')}}</h1>
+          <h5>{{ apos.singleton(data.page, 'numbersSubHeader2', 'apostrophe-rich-text')}}</h5>
+        </div>
+        <div class="number-box col-6 col-sm-3 col-md-2">
+          <h1>{{ apos.singleton(data.page, 'numbersHeader3', 'apostrophe-rich-text')}}</h1>
+          <h5>{{ apos.singleton(data.page, 'numbersSubHeader3', 'apostrophe-rich-text')}}</h5>
+        </div>
+        <div class="number-box col-6 col-sm-3 col-md-2">
+          <h1>{{ apos.singleton(data.page, 'numbersHeader4', 'apostrophe-rich-text')}}</h1>
+          <h5>{{ apos.singleton(data.page, 'numbersSubHeader4', 'apostrophe-rich-text')}}</h5>
         </div>
       </div>
     </div>
-    <div class="container-fluid cutout-container">
-      <div class="cutout-bottom row justify-content-around">
-        <div class="layered col-4 col-lg-4 col-xl-3">
-          <div class="row">
-            <div class="col-6 line"></div>
-            <div class="col-6"></div>
+
+    <div class="container-fluid details">
+      <div class="row justify-content-around">
+        <div class="col-11 col-md-6 col-lg-7">{{ apos.singleton(data.page, 'detailsVideo', 'apostrophe-video') }}</div>
+        <div class="specs col-11 col-md-5 col-lg-4">
+          <div class="container-fluid">
+            <div class="row" id="specs">
+              <h5>{{ apos.singleton(data.page, 'specsHeader', 'apostrophe-rich-text')}}</h5>
+            </div>
+            <div class="row dimensions justify-content-between">
+              {{ apos.singleton(data.page, 'dimensionsHeader', 'apostrophe-rich-text')}}
+              {{ apos.singleton(data.page, 'dimensions', 'apostrophe-rich-text')}}
+            </div>
+            <div class="row cover justify-content-between">
+              {{ apos.singleton(data.page, 'coverHeader', 'apostrophe-rich-text')}}
+              {{ apos.singleton(data.page, 'cover', 'apostrophe-rich-text')}}
+            </div>
+            <div class="row guidelines justify-content-between">
+              {{ apos.singleton(data.page, 'guidelinesHeader', 'apostrophe-rich-text')}}
+              {{ apos.singleton(data.page, 'guidelines', 'apostrophe-rich-text')}}
+            </div>
           </div>
-          <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesLeft', 'apostrophe-rich-text')}}</h4>
-        </div>
-        <div class="proprietary col-4 col-xl-3">
-          <div class="row">
-            <div class="col-6 line"></div>
-            <div class="col-6"></div>
-          </div>
-          <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesCenter', 'apostrophe-rich-text')}}</h4>
-        </div>
-        <div class="high-quality col-4 col-xl-3">
-          <div class="row">
-            <div class="col-6 line"></div>
-            <div class="col-6"></div>
-          </div>
-          <h4 class="cutout-desc">{{ apos.singleton(data.page, 'cutoutDesRight', 'apostrophe-rich-text')}}</h4>
         </div>
       </div>
     </div>
+
+    <div class="order container-fluid d-flex flex-row justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8">
+        <h1>{{ apos.singleton(data.page, 'orderHeader', 'apostrophe-rich-text')}}</h1>
+        <h4>{{ apos.singleton(data.page, 'orderParagraph', 'apostrophe-rich-text')}}</h4>
+        <div class="info-box-button">{{ apos.singleton(data.page, 'orderButton', 'link')}}</div>
+      </div>
+    </div>
+
   </div>
-
-  <div class="container-fluid facts">
-    <div class="row">
-      <div class="text">
-        <div class="img">
-          <i class="fas fa-angle-up fa-rotate-45"></i>
-          {{ apos.singleton(data.page, 'factsImage', 'image')}}
-        </div>
-        <h1>{{ apos.singleton(data.page, 'factsHeader', 'apostrophe-rich-text')}}</h1>
-        <div id="facts-paragraph">{{ apos.singleton(data.page, 'factsParagraph', 'apostrophe-rich-text')}}</div>
-      </div>
-    </div>
-    <i class="fas fa-square-full"></i>
-  </div>
-
-  <div class="numbers container-fluid">
-    <div class="row justify-content-around">
-      <div class="number-box col-6 col-sm-3 col-md-2">
-        <h1>{{ apos.singleton(data.page, 'numbersHeader1', 'apostrophe-rich-text')}}</h1>
-        <h5>{{ apos.singleton(data.page, 'numbersSubHeader1', 'apostrophe-rich-text')}}</h5>
-      </div>
-      <div class="number-box col-6 col-sm-3 col-md-2">
-        <h1>{{ apos.singleton(data.page, 'numbersHeader2', 'apostrophe-rich-text')}}</h1>
-        <h5>{{ apos.singleton(data.page, 'numbersSubHeader2', 'apostrophe-rich-text')}}</h5>
-      </div>
-      <div class="number-box col-6 col-sm-3 col-md-2">
-        <h1>{{ apos.singleton(data.page, 'numbersHeader3', 'apostrophe-rich-text')}}</h1>
-        <h5>{{ apos.singleton(data.page, 'numbersSubHeader3', 'apostrophe-rich-text')}}</h5>
-      </div>
-      <div class="number-box col-6 col-sm-3 col-md-2">
-        <h1>{{ apos.singleton(data.page, 'numbersHeader4', 'apostrophe-rich-text')}}</h1>
-        <h5>{{ apos.singleton(data.page, 'numbersSubHeader4', 'apostrophe-rich-text')}}</h5>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid details">
-    <div class="row justify-content-around">
-      <div class="col-11 col-md-6 col-lg-7">{{ apos.singleton(data.page, 'detailsVideo', 'apostrophe-video') }}</div>
-      <div class="specs col-11 col-md-5 col-lg-4">
-        <div class="container-fluid">
-          <div class="row" id="specs">
-            <h5>{{ apos.singleton(data.page, 'specsHeader', 'apostrophe-rich-text')}}</h5>
-          </div>
-          <div class="row dimensions justify-content-between">
-            {{ apos.singleton(data.page, 'dimensionsHeader', 'apostrophe-rich-text')}}
-            {{ apos.singleton(data.page, 'dimensions', 'apostrophe-rich-text')}}
-          </div>
-          <div class="row cover justify-content-between">
-            {{ apos.singleton(data.page, 'coverHeader', 'apostrophe-rich-text')}}
-            {{ apos.singleton(data.page, 'cover', 'apostrophe-rich-text')}}
-          </div>
-          <div class="row guidelines justify-content-between">
-            {{ apos.singleton(data.page, 'guidelinesHeader', 'apostrophe-rich-text')}}
-            {{ apos.singleton(data.page, 'guidelines', 'apostrophe-rich-text')}}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="order container-fluid d-flex flex-row justify-content-center">
-    <div class="col-12 col-sm-10 col-md-8">
-      <h1>{{ apos.singleton(data.page, 'orderHeader', 'apostrophe-rich-text')}}</h1>
-      <h4>{{ apos.singleton(data.page, 'orderParagraph', 'apostrophe-rich-text')}}</h4>
-      <div class="info-box-button">{{ apos.singleton(data.page, 'orderButton', 'link')}}</div>
-    </div>
-  </div>
-
 {% endblock %}

@@ -1,3 +1,14 @@
+html, body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+.apos-refreshable {
+  min-height: 100%;
+  position: relative;
+}
+
 /* Text */
 
 p {
@@ -37,11 +48,21 @@ p {
   padding: 6px 25px;
 }
 
+/* Content Body */
+
+.content-body {
+  height: 100%;
+  padding-bottom: 150px;
+}
+
 /* Footer */
 
 footer {
   background-color: #D11655!important;
   height: 150px;
+  position: absolute!important;
+  bottom: 0;
+  width: 100%;
 }
 
 footer .nav-link {
