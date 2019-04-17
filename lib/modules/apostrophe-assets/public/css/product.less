@@ -1,21 +1,17 @@
-h6 {
-  font-size: .9em;
-  font-weight: 400;
-}
 
 /* Cutout */
 
 .product-jumbotron {
   padding-top: 0;
   width: 100%;
-  height: 55vh;
+  height: 70vh;
   min-height: 350px;
   max-height: 90vw;
 }
 
 .product-jumbotron .background-image {
   width: 100%;
-  height: 55vh;
+  height: 70vh;
   min-height: 350px;
   max-height: 90vw;
   background-position: top;
@@ -28,7 +24,7 @@ h6 {
   padding-top: 40px;
 }
 
-.product-jumbotron-header p {
+.product-jumbotron-header * {
   color: #3210ED;
   margin-bottom: 45px;
 }
@@ -50,11 +46,6 @@ h6 {
   margin-left: 3%;
 }
 
-.cutout-desc {
-  font-size: 1.2em;
-  font-weight: 300;
-}
-
 .line {
   border-right: 2px solid #3210ED;
   height: 15vh;
@@ -68,9 +59,14 @@ h6 {
   padding-left: 7%;
 }
 
-.facts h1 {
+#facts-header .apos-rich-text * {
   color: #3210ED;
   margin-bottom: 30px;
+}
+
+  /* Allows CMS user to access image controls */
+#facts-header .apos-area-widgets {
+  width: 50%;
 }
 
 .img {
@@ -79,10 +75,6 @@ h6 {
   margin-left: 4%;
   margin-top: -90px;
   margin-bottom: 10px;
-}
-
-.facts h1 .apos-area-widgets {
-  width: 50%;
 }
 
 .img img {
@@ -106,8 +98,7 @@ h6 {
   transform: rotate(-45deg);
 }
 
-#facts-paragraph p {
-  font-size: 1.5em;
+#facts-paragraph {
   margin-bottom: 30px;
 }
 
@@ -137,11 +128,6 @@ h6 {
   margin-bottom: 30px;
 }
 
-.number-box h1 p {
-  font-size: 1.7em;
-  font-weight: 900;
-}
-
 /* Details */
 
 .details {
@@ -166,14 +152,13 @@ video {
   margin-bottom: 50px;
 }
 
-.order h1 {
+#order-header .apos-rich-text * {
   color: #3210ED;
   margin-bottom: 20px;
 }
 
-.order h4 {
-  font-weight: 300;
-  margin-bottom: 40px;
+#order-paragraph {
+  margin-bottom: 50px;
 }
 
 /* Media Screen */

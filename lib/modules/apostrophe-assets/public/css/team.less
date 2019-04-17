@@ -1,0 +1,233 @@
+/* Jumbotron */
+
+.team-jumbotron {
+  padding-top: 0;
+  width: 100%;
+  height: 80vh;
+  min-height: 350px;
+  max-height: 90vw;
+}
+
+.team-jumbotron .background-image {
+  width: 100%;
+  height: 80vh;
+  min-height: 350px;
+  max-height: 90vw;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.team-jumbotron-header .apos-rich-text * {
+  color: #FFFFFF;
+  background-color: #D11655;
+  display: inline;
+  padding: 10px 20px;
+}
+
+.team-jumbotron .container {
+  padding-top: 60px;
+}
+
+/* Story */
+
+.story {
+  text-align: left;
+}
+
+.story-header .apos-rich-text * {
+  margin-top: 40px;
+  margin-bottom: 45px;
+  color: #3210ED;
+}
+
+.product-highlight {
+  background-color: #E9EFF3;
+  padding: 5% 5%;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+/* Team Qualifications */
+
+.team-qualifications {
+  color: #FFFFFF;
+  background-color: #3210ED;
+  padding: 10% 10%;
+}
+
+.team-qualifications .apos-rich-text * {
+  line-height: 1.4em;
+}
+
+.grads, .phds {
+  padding: 5% 5%;
+}
+
+.grads img, .phds img {
+  width: 100%;
+}
+
+/* Relationships */
+
+.relationships {
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+#title {
+  color: #3210ED;
+  margin-bottom: 30px;
+}
+
+.logos img {
+  max-height: 150px;
+  max-width: 100%;
+}
+
+.logos {
+  padding: 30px;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+/* Thoughts */
+
+.thoughts {
+  text-align: center;
+  padding: 5%;
+  background-color: #ECF1F4;
+}
+
+.thoughts .apos-rich-text *:not(p) {
+  color: #3210ED;
+  margin-bottom: 40px;
+}
+
+#thoughts {
+  margin-bottom: 10px;
+}
+
+#resources-link a {
+  color: #D11655;
+}
+
+#resources-link .fa-arrow-right {
+  -webkit-text-stroke-color: #ECF1F4;
+  -webkit-text-stroke-width: 1px;
+  position: relative;
+  top: 2px;
+}
+
+/* Contact */
+
+.contact {
+  text-align: center;
+  padding: 5%;
+  background-color: #E9EFF3;
+}
+
+#contact-header .apos-rich-text * {
+  color: #3210ED;
+  margin-bottom: 15px;
+}
+
+#contact-submit {
+  padding: 10px 40px;
+}
+
+#thoughts .apos-rich-text * {
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.contact .apos-ui, .contact .apos-area, .contact .apos-field {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 25px;
+}
+
+.contact .apos-field label {
+  display: none;
+}
+
+.contact .apos-field-name input, .contact .apos-field-email input, .contact .apos-field-message textarea {
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.contact .apos-ui .apos-field-input-text:focus, .contact .apos-ui .apos-field-input-textarea:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.contact .apos-field-input-textarea {
+  height: 200px!important;
+}
+
+.contact .apos-field-input {
+  border-radius: 0;
+  border: 2px solid #3210ED;
+  background-color: white;
+  width: 100%;
+}
+
+/* Media Screen */
+
+@media screen and (max-width: 800px) {
+  .team-qualifications .apos-rich-text * {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .jumbotron {
+    height: 50vh;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+
+  p {
+    font-size: 1em!important;
+  }
+
+  h2 {
+    font-size: 1.1em!important;
+  }
+
+  .team-qualifications .apos-rich-text * {
+    text-align: center;
+  }
+
+  .team-qualifications {
+    padding: 10% 5%;
+  }
+
+  .relationships {
+    margin-top: 10%;
+  }
+
+  .logos {
+    padding: 0;
+    margin-top: 10%;
+  }
+
+  .thoughts {
+    padding: 12% 7%;
+  }
+
+}

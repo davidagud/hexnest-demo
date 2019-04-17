@@ -11,8 +11,7 @@
       {% set url = '#' %}
     {% endif %}
     <div class="c-link__item">
-      <a class="{{ item.linkStyle }} c-link__link" href="{{ url }}">{{ item.linkText }}</a>
+      <a class="{{ item.linkStyle }} c-link__link {{ data.widget.size }} {{ data.widget.weight }}" href="{{ url }}">{{ item.linkText }}</a>
     </div>
   {% endfor %}
 </div>
-

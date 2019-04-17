@@ -11,7 +11,7 @@
       {% set url = '#' %}
     {% endif %}
     <div class="c-link__item">
-      <a class="{{ item.linkStyle }} c-link__link" href="{{ url }}">{{ item.linkText }} <i class="fas fa-arrow-right"></i></a>
+      <a class="{{ item.linkStyle }} c-link__link {{ data.widget.size }} {{ data.widget.weight }}" href="{{ url }}">{{ item.linkText }} <i class="fas fa-arrow-right" style="{{ '-webkit-text-stroke-width: 2px' if data.widget.weight == 'thin-link' }} {{ '-webkit-text-stroke-width: 0px' if data.widget.weight == 'bold-link' }}"></i></a>
     </div>
   {% endfor %}
 </div>
