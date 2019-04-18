@@ -1,11 +1,11 @@
 {% extends "pages/default.html" %}
 
 {% block main %}
-  <div class="content-body">
+  <div class="content-body team">
 
     <div class="team-jumbotron jumbotron-fluid">
       {{ apos.singleton(data.page, 'heroBackground', 'background-image') }}
-      <div class="container">
+      <div class="container-fluid">
         <div class="team-jumbotron-header text-nowrap">
           {{ apos.singleton(data.page, 'heroHeader', 'apostrophe-rich-text', {
               toolbar: [ 'Styles', 'Bold', 'Italic' ],
@@ -24,7 +24,7 @@
     </div>
 
     <div class="story container-fluid d-flex flex-column align-items-center">
-      <div class="col-11 col-sm-10 col-md-9">
+      <div class="col-12 col-sm-10 col-md-9">
         <div class="story-header">
           {{ apos.singleton(data.page, 'storyHeader', 'apostrophe-rich-text', {
             toolbar: [ 'Styles', 'Bold', 'Italic' ],
@@ -40,7 +40,7 @@
             ]}) }}
         </div>
       </div>
-      <div class="story-paragraph col-11 col-sm-10 col-md-9">
+      <div class="story-paragraph col-12 col-sm-10 col-md-9">
         {{ apos.singleton(data.page, 'storyParagraph', 'apostrophe-rich-text', {
             toolbar: [ 'Styles', 'Bold', 'Italic' ],
             styles: [
@@ -72,7 +72,7 @@
 
     <div class="team-qualifications container-fluid">
       <div class="row justify-content-around align-items-center">
-        <div class="left-side col-11 col-sm-6 col-xl-4">
+        <div class="left-side col-12 col-sm-6 col-md-5 col-lg-4 col-xl-4">
           {{ apos.singleton(data.page, 'teamQualifications', 'apostrophe-rich-text', {
               toolbar: [ 'Styles', 'Bold', 'Italic' ],
               styles: [
@@ -87,54 +87,52 @@
               ]}) }}
         </div>
         <div class="right-side row col-12 col-sm-6 col-xl-4 justify-content-center align-items-center">
-          <div class="grads col-6 col-sm-12 col-md-9 col-lg-8 col-xl-10">
+          <div class="grads col-6 col-sm-10 col-md-9 col-lg-8 col-xl-10">
             {{ apos.singleton(data.page, 'sealTop', 'image') }}
           </div>
-          <div class="phds col-6 col-sm-12 col-md-9 col-lg-8 col-xl-10">
+          <div class="phds col-6 col-sm-10 col-md-9 col-lg-8 col-xl-10">
             {{ apos.singleton(data.page, 'sealBottom', 'image') }}
           </div>
         </div>
       </div>
     </div>
 
-    <div class="relationships container-fluid d-flex justify-content-center">
-      <div class="col-12 col-sm-10">
-        <div class="col-12 col-sm-10 offset-sm-1" id="title">
-          {{ apos.singleton(data.page, 'relationshipsHeader', 'apostrophe-rich-text', {
-              toolbar: [ 'Styles', 'Bold', 'Italic' ],
-              styles: [
-                { name: 'H1', element: 'h1' },
-                { name: 'H2', element: 'h2' },
-                { name: 'H3', element: 'h3' },
-                { name: 'H4', element: 'h4' },
-                { name: 'H5', element: 'h5' },
-                { name: 'P', element: 'p' },
-                { name: 'Thin', element: 'span', attributes: {'style': 'font-weight: 100'} },
-                { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
-              ]}) }}
-        </div>
-        <div class="col-10 offset-1" id="paragraph">
-          {{ apos.singleton(data.page, 'relationshipsParagraph', 'apostrophe-rich-text', {
-              toolbar: [ 'Styles', 'Bold', 'Italic' ],
-              styles: [
-                { name: 'H1', element: 'h1' },
-                { name: 'H2', element: 'h2' },
-                { name: 'H3', element: 'h3' },
-                { name: 'H4', element: 'h4' },
-                { name: 'H5', element: 'h5' },
-                { name: 'P', element: 'p' },
-                { name: 'Thin', element: 'span', attributes: {'style': 'font-weight: 100'} },
-                { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
-              ]}) }}
-        </div>
-        <div class="row logos d-flex align-items-center">
-          <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo1', 'image') }}</div>
-          <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo2', 'image') }}</div>
-          <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo3', 'image') }}</div>
-          <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo4', 'image') }}</div>
-          <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo5', 'image') }}</div>
-          <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo6', 'image') }}</div>
-        </div>
+    <div class="relationships container-fluid row justify-content-center">
+      <div class="col-12 col-sm-11" id="title">
+        {{ apos.singleton(data.page, 'relationshipsHeader', 'apostrophe-rich-text', {
+            toolbar: [ 'Styles', 'Bold', 'Italic' ],
+            styles: [
+              { name: 'H1', element: 'h1' },
+              { name: 'H2', element: 'h2' },
+              { name: 'H3', element: 'h3' },
+              { name: 'H4', element: 'h4' },
+              { name: 'H5', element: 'h5' },
+              { name: 'P', element: 'p' },
+              { name: 'Thin', element: 'span', attributes: {'style': 'font-weight: 100'} },
+              { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
+            ]}) }}
+      </div>
+      <div class="col-12 col-sm-10 col-lg-9" id="paragraph">
+        {{ apos.singleton(data.page, 'relationshipsParagraph', 'apostrophe-rich-text', {
+            toolbar: [ 'Styles', 'Bold', 'Italic' ],
+            styles: [
+              { name: 'H1', element: 'h1' },
+              { name: 'H2', element: 'h2' },
+              { name: 'H3', element: 'h3' },
+              { name: 'H4', element: 'h4' },
+              { name: 'H5', element: 'h5' },
+              { name: 'P', element: 'p' },
+              { name: 'Thin', element: 'span', attributes: {'style': 'font-weight: 100'} },
+              { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
+            ]}) }}
+      </div>
+      <div class="row logos d-flex align-items-center col-lg-11">
+        <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo1', 'image') }}</div>
+        <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo2', 'image') }}</div>
+        <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo3', 'image') }}</div>
+        <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo4', 'image') }}</div>
+        <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo5', 'image') }}</div>
+        <div class="col-6 col-sm-4 logo">{{ apos.singleton(data.page, 'partnerLogo6', 'image') }}</div>
       </div>
     </div>
 
@@ -153,7 +151,7 @@
               { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
             ]}) }}
         <div class="col-12 d-flex justify-content-center">
-          <div class="col-12 col-sm-10 col-lg-8" id="thoughts">
+          <div class="col-12 col-sm-10 col-lg-9" id="thoughts">
             {{ apos.singleton(data.page, 'thoughtsParagraph', 'apostrophe-rich-text', {
                 toolbar: [ 'Styles', 'Bold', 'Italic' ],
                 styles: [
@@ -204,7 +202,7 @@
                 { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
               ]}) }}
         </div>
-        <div class="row col-12 col-sm-11 col-md-10 col-lg-8 justify-content-center">
+        <div class="row col-12 col-sm-11 col-md-10 col-lg-9 justify-content-center">
           {{ apos.singleton(data.page, 'submit', 'contact-forms-submit')}}
         </div>
       </div>

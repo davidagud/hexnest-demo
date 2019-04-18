@@ -5,7 +5,7 @@
 
     <div class="home-jumbotron jumbotron-fluid">
       {{ apos.singleton(data.page, 'heroBackground', 'background-image')}}
-      <div class="container col-10">
+      <div class="container-fluid">
         <div class="home-jumbotron-header text-nowrap">
           {{ apos.singleton(data.page, 'heroHeaderBlockTop', 'apostrophe-rich-text', {
               toolbar: [ 'Styles', 'Bold', 'Italic' ],
@@ -40,7 +40,7 @@
 
     <div class="elevator-pitch">
       <div class="elevator-pitch-top d-flex flex-column align-items-center">
-        <div class="elevator-header col-11 col-sm-10 col-md-8 col-lg-7 col-xl-5">
+        <div class="elevator-header col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6">
           {{ apos.singleton(data.page, 'elevatorHeader', 'apostrophe-rich-text', {
               toolbar: [ 'Styles', 'Bold', 'Italic' ],
               styles: [
@@ -54,7 +54,7 @@
                 { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
               ]}) }}
         </div>
-        <div class="elevator-paragraph col-11 col-sm-10 col-md-8 col-lg-7 col-xl-6">
+        <div class="elevator-paragraph col-11 col-sm-10 col-md-8 col-lg-7 col-xl-8">
           {{ apos.singleton(data.page, 'elevatorParagraph', 'apostrophe-rich-text', {
               toolbar: [ 'Styles', 'Bold', 'Italic' ],
               styles: [
@@ -72,7 +72,7 @@
 
       <div class="elevator-pitch-bottom container-fluid">
         <div class="row justify-content-around">
-          <div class="col-8 col-sm-5 col-md-5 col-lg-5 col-xl-4 comp-adv d-flex flex-column align-items-center justify-content-between" id="comp-adv-left">
+          <div class="col-8 col-sm-5 col-md-5 col-lg-5 col-xl-5 comp-adv d-flex flex-column align-items-center justify-content-between" id="comp-adv-left">
             <div class="comp-header">
               {{ apos.singleton(data.page, 'compAdvLeftTop', 'apostrophe-rich-text', {
                       toolbar: [ 'Styles', 'Bold', 'Italic' ],
@@ -103,7 +103,7 @@
                   ]}) }}
             </div>
           </div>
-          <div class="col-8 col-sm-5 col-md-5 col-lg-5 col-xl-4 comp-adv d-flex flex-column align-items-center justify-content-between" id="comp-adv-right">
+          <div class="col-8 col-sm-5 col-md-5 col-lg-5 col-xl-5 comp-adv d-flex flex-column align-items-center justify-content-between" id="comp-adv-right">
             <div class="comp-header">
               {{ apos.singleton(data.page, 'compAdvRightTop', 'apostrophe-rich-text', {
                 toolbar: [ 'Styles', 'Bold', 'Italic' ],
@@ -141,7 +141,7 @@
               { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
             ]}) }}
       </div>
-      <div class="info-box col-11 col-sm-9 col-md-8 col-lg-7 col-xl-6">
+      <div class="info-box col-11 col-sm-9 col-md-8 col-lg-7 col-xl-7">
         <div class="col-12">
           <i class="fas fa-angle-up fa-rotate-45"></i>
           <div id="info-box-header">
@@ -195,7 +195,7 @@
               { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
             ]}) }}
       </div>
-      <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-6 product-box-paragraph">
+      <div class="col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7 product-box-paragraph">
           {{ apos.singleton(data.page, 'productBoxParagraph', 'apostrophe-rich-text', {
               toolbar: [ 'Styles', 'Bold', 'Italic' ],
               styles: [
@@ -229,7 +229,7 @@
               ]}) }}
         </div>
         <div class="d-flex justify-content-center">
-          <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-7" id="thoughts">
+          <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-8" id="thoughts">
             {{ apos.singleton(data.page, 'contactParagraph', 'apostrophe-rich-text', {
                 toolbar: [ 'Styles', 'Bold', 'Italic' ],
                 styles: [
@@ -244,7 +244,7 @@
                 ]}) }}
           </div>
         </div>
-        <div class="row col-12 col-sm-11 col-md-10 col-lg-8 col-xl-7 justify-content-center">
+        <div class="row col-12 col-sm-11 col-md-10 col-lg-8 col-xl-8 justify-content-center">
           {{ apos.singleton(data.page, 'submit', 'contact-forms-submit')}}
         </div>
       </div>

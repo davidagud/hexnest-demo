@@ -16,9 +16,9 @@
   position: absolute;
 }
 
-.home-jumbotron .container {
-  padding-top: 10vh;
-  margin-left: 5vw;
+.home-jumbotron .container-fluid {
+  padding-top: 5vw;
+  padding-left: 5vw;
 }
 
 .home-jumbotron-header .apos-rich-text * {
@@ -78,7 +78,7 @@
   box-shadow: 0 0 6px 1px #DBDBDB;
 }
 
-#comp-adv-left-bottom {
+#comp-adv-left-bottom * {
   margin-bottom: 0!important;
 }
 
@@ -132,7 +132,7 @@
 
 .info-box {
   background-color: white;
-  margin-top: 80px;
+  margin-top: 5%;
   padding-top: 0!important;
   padding-bottom: 40px;
   padding-right: 30px;
@@ -263,23 +263,45 @@
 }
 
 /* Media Screen */
-@media screen and (max-width: 970px) {
-  .comp-header .apos-rich-text * {
-    font-size: 22px;
+
+@media screen and (min-width: 1200px) {
+
+  .call-to-action, .call-to-action .background-image {
+    height: 1000px;
+  }
+
+  .home h1, .home .h1-link {
+    font-size: 55px;
+  }
+
+  .home h2, .home .h2-link {
+    font-size: 50px;
+  }
+
+  .home h3, .home .h3-link {
+    font-size: 38px;
+  }
+
+  .home h4, .home .h4-link {
+    font-size: 32px;
+  }
+
+  .home h5, .home .h5-link {
+    font-size: 26px;
+  }
+
+  .home h6, .home .h6-link {
+    font-size: 70px;
+  }
+
+  .home p, .home .p-link {
+    font-size: 30px;
   }
 }
 
 @media screen and (max-width: 850px) {
   .info-box {
     background: rgba(255,255,255,.7);
-  }
-
-  #info-box-header .apos-rich-text > * {
-    font-size: 120%;
-  }
-
-  #info-box-paragraph .apos-rich-text > * {
-    font-size: 100%;
   }
 }
 
@@ -324,11 +346,6 @@
 
   .home-jumbotron .container {
     margin-left: 0;
-  }
-
-  .home-jumbotron-header .apos-rich-text * {
-    font-size: 35px;
-    line-height: 1.8;
   }
 
   .call-to-action .background-image {
@@ -379,7 +396,6 @@
     font-size: 16px;
   }
 }
-
 
 @media screen and (max-width: 375px) {
 
