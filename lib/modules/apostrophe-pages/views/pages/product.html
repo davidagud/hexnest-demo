@@ -1,12 +1,12 @@
 {% extends "pages/default.html" %}
 
 {% block main %}
-  <div class="content-body">
+  <div class="content-body product">
 
     <div class="cutout">
       <div class="product-jumbotron jumbotron-fluid">
         {{ apos.singleton(data.page, 'heroBackground', 'background-image')}}
-        <div class="container">
+        <div class="container-fluid">
           <div class="product-jumbotron-header text-nowrap">
             {{ apos.singleton(data.page, 'heroHeader', 'apostrophe-rich-text', {
                 toolbar: [ 'Styles', 'Bold', 'Italic' ],
@@ -21,9 +21,9 @@
                   { name: 'Regular', element: 'span', attributes: {'style': 'font-weight: 400'} }
                 ]}) }}
           </div>
-          <div class="row safe col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+          <div class="row safe col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4">
             <div class="icon col-2">{{ apos.singleton(data.page, 'topIcon', 'image')}}</div>
-            <div id="safe-paragraph" class="col-9 col-sm-8">
+            <div id="safe-paragraph" class="col-10">
               {{ apos.singleton(data.page, 'topIconParagraph', 'apostrophe-rich-text', {
                   toolbar: [ 'Styles', 'Bold', 'Italic' ],
                   styles: [
@@ -38,9 +38,9 @@
                   ]}) }}
             </div>
           </div>
-          <div class="row affordable col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6">
+          <div class="row affordable col-12 col-sm-9 col-md-7 col-lg-6 col-xl-4">
             <div class="icon col-2">{{ apos.singleton(data.page, 'bottomIcon', 'image')}}</div>
-            <div id="affordable-paragraph" class="col-9 col-sm-8">
+            <div id="affordable-paragraph" class="col-10">
               {{ apos.singleton(data.page, 'bottomIconParagraph', 'apostrophe-rich-text', {
                   toolbar: [ 'Styles', 'Bold', 'Italic' ],
                   styles: [
@@ -125,7 +125,7 @@
 
     <div class="container-fluid facts">
       <div class="row">
-        <div class="text">
+        <div class="text col-12">
           <div class="img">
             <i class="fas fa-angle-up fa-rotate-45"></i>
             {{ apos.singleton(data.page, 'factsImage', 'image')}}
@@ -275,7 +275,7 @@
     <div class="container-fluid details">
       <div class="row justify-content-around">
         <div class="col-11 col-md-6 col-lg-7">{{ apos.singleton(data.page, 'detailsVideo', 'apostrophe-video') }}</div>
-        <div class="specs col-11 col-md-5 col-lg-4">
+        <div class="specs col-11 col-md-5 col-lg-5">
           <div class="container-fluid">
             <div class="row" id="specs">
               {{ apos.singleton(data.page, 'specsHeader', 'apostrophe-rich-text', {
@@ -375,7 +375,7 @@
     </div>
 
     <div class="order container-fluid d-flex flex-row justify-content-center">
-      <div class="col-12 col-sm-10 col-md-8">
+      <div class="col-12 col-sm-10 col-md-10 col-lg-8">
         <div id="order-header">
           {{ apos.singleton(data.page, 'orderHeader', 'apostrophe-rich-text', {
               toolbar: [ 'Styles', 'Bold', 'Italic' ],
