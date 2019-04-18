@@ -46,6 +46,11 @@ var apos = require('apostrophe')({
     'contact-forms-submit-widgets': { extend: 'apostrophe-pieces-submit-widgets', fields: [ 'name', 'email', 'message' ], published: true },
 
     // Content Widgets
+    'apostrophe-attachments': {
+      uploadfs: {
+        https: true
+      }
+    },
     'arrow-link-widgets': { extend: 'apostrophe-widgets' },
     'background-image-widgets': { extend: 'apostrophe-widgets' },
     'content-widgets': { extend: 'apostrophe-widgets' },
