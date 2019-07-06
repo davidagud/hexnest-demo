@@ -1,7 +1,7 @@
 {
   "name": "hexnest",
   "version": "1.0.0",
-  "description": "Website with CMS built for HexNest",
+  "description": "Website built for HexNest using Apostrophe CMS by P'unk Avenue",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": ""
   },
-  "author": "P'unk Avenue",
+  "author": "David Agudelo",
   "license": "MIT",
   "dependencies": {
     "apostrophe": "^2.47.0",
